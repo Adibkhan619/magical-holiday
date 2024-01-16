@@ -47,15 +47,11 @@ font-family: 'Mulish', sans-serif; */
 
 .banner-section {
     border-radius: 16px;
-    /* width: 100%; */
-    margin: 50px auto;
     max-width: 1200px;
     height: 500px;
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(/Images/Group\ 13\ \(1\)\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
@@ -122,10 +118,16 @@ font-family: 'Mulish', sans-serif; */
 
 /* =========== POPULAR TOUR SECTION =========== */
 .popular-tour-section {
+    margin: 0 10%;
     display: flex;
-    justify-content: center;
-    margin: 100px 10%;
     gap: 50px;
+    padding: 50px 0%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mountain-img {
+    width: 100%;
 }
 
 .section-headings {
@@ -148,9 +150,7 @@ font-family: 'Mulish', sans-serif; */
 .article-list {
     list-style: disc;
     padding-left: 20px;
-
 }
-
 
 /* shared style */
 .orange-button {
@@ -169,6 +169,8 @@ font-family: 'Mulish', sans-serif; */
 .center-alinged {
     text-align: center;
 }
+
+/* ============ DESTINATION SECTION ============ */
 
 
 .destinations {
@@ -223,14 +225,204 @@ font-family: 'Mulish', sans-serif; */
     grid-row: 3/span 1;
 }
 
+/* ========== WHY CHOOSE US SECTION ========= */
 
 
 
+.why-choose-us {
+    margin: 100px 10%;
+}
 
+.card-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
 
+.card {
+    border: 1px solid red;
+    width: 573px;
+    /* height: 284px; */
+}
 
+.card-1,
+.card-2,
+.card-3 {
+    padding: 32px;
+    padding-bottom: 0;
+}
 
+.card-head {
+    padding-top: 32px;
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 800;
+}
 
+.card-1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.card-2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.card-3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+/* =============DISCOUNTS AND DEAL SECTION ============ */
+
+/* ================BOTTOM ARTICLE SECTION=============== */
+
+.bottom-article {
+    margin: 0 10%;
+    display: flex;
+    gap: 28px;
+    /* padding: 50px 0%; */
+    align-items: top;
+    justify-content: center;
+}
+
+.bottom-list {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+.bottom-list li {
+    margin-bottom: 20px;
+}
+
+/* ========== NEWSLETTER SECTION =========== */
+
+.newsletter-section {
+    margin: 100px 10%;
+    display: flex;
+    gap: 28px;
+    /* padding: 50px; */
+    align-items: top;
+    justify-content: center;
+}
+
+.newsletter-form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newsletter-form p,
+.newsletter-form h3 {
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+.line {
+
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+    margin: 24px;
+}
+
+.form-input {
+    margin-bottom: 16px;
+    padding: 16px 0 16px 20px;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.form-button {
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 150px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: 0;
+}
+
+.newsletter-img {
+    position: relative;
+}
+
+.discount-tag {
+    position: absolute;
+    width: 324px;
+    height: 90px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    padding-top: 20px;
+
+    bottom: 55px;
+    left: 340px;
+}
+
+.discount-tag p {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.discount-tag h3 {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* =========== FOOTER SECTION =========== */
+
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-title {
+    padding-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px ;
+}
+
+.footer-line {
+    margin: 50px auto;
+    width: 60%;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.copyright {
+    padding-bottom: 110px;
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+
+}
 
 
 
@@ -245,7 +437,6 @@ font-family: 'Mulish', sans-serif; */
 
     .nav {
         margin: 20px 20px 5px 20px;
-
     }
 
     .nav-bar {
@@ -299,9 +490,27 @@ font-family: 'Mulish', sans-serif; */
     .find-now-btn {
         padding: 16px 75px;
     }
+
+
+    .destinations {}
+
+    .popular-tour-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .mountain-img {
+        width: 90%;
+        margin: ;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
-@media screen and (min-width:576px) and (max-width:991px) {
+@media screen and (min-width:600px) and (max-width:991px) {
 
     .website-title {
         margin-left: 0;
