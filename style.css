@@ -43,7 +43,8 @@ font-family: 'Mulish', sans-serif; */
 .orange-text {
     color: #FF5400;
 }
-.orange-text a{
+
+.orange-text a {
     color: #FF5400;
 }
 
@@ -58,7 +59,7 @@ font-family: 'Mulish', sans-serif; */
     background-size: cover;
     text-align: center;
     margin: 50px auto;
-    width: 90%;  
+    width: 90%;
 }
 
 .banner-heading {
@@ -190,7 +191,7 @@ font-family: 'Mulish', sans-serif; */
     grid-template-rows: repeat(3, 1fr);
 }
 
-.destination-img img{
+.destination-img img {
     width: 100%;
     height: 286px;
 }
@@ -234,7 +235,7 @@ font-family: 'Mulish', sans-serif; */
 /* ========== WHY CHOOSE US SECTION ========= */
 
 .why-choose-us {
-    margin: 100px 0%;
+    margin: 100px 2%;
 }
 
 .card-container {
@@ -309,6 +310,10 @@ font-family: 'Mulish', sans-serif; */
 
 .bottom-list li {
     margin-bottom: 20px;
+}
+
+.video iframe {
+    border-radius: 15px;
 }
 
 /* ========== NEWSLETTER SECTION =========== */
@@ -433,7 +438,7 @@ footer {
 @media screen and (max-width: 600px) {
 
 
-     /* NAV AND BANNER SECTION */
+    /* NAV AND BANNER SECTION */
     .nav {
         margin: 20px 20px 5px 20px;
     }
@@ -497,6 +502,11 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-bottom: 0 auto;
+    }
+
+    .section-headings {
+        font-size: 1.5rem;
     }
 
     .mountain-img img {
@@ -508,29 +518,82 @@ footer {
     }
 
     /* DESTINATION SECTION */
+
+    .destinations {
+        margin-top: 24px;
+    }
+
     .destination-img {
         display: flex;
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     .video iframe {
         width: 100%;
+        border-radius: 15px;
     }
 
     .newsletter-section {
+        margin-top: 24px;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
+    .newsletter-form {
+        width: 80%;
+        margin-right: 25px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .form-button {
+        /* width: 10px;
+        height: 50px; */
+        color: #FFF;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 20px;
+        font-weight: 800;
+        text-align: center;
+        justify-content: center;
+        display:flex;
+        margin: 0;
+        padding: 15px 25px;
+
+
+    }
+
+    .why-choose-us {
+        margin: 0 5%;
+    }
+
+    .bottom-article {
+        margin-top: 24px;
+        gap: 24px;
+        margin-bottom: 0;
+    }
+
     .newsletter-img img {
-        width: 100%;
+        width:100%;
+        margin-bottom: 0;
+
     }
 
     .discount-tag {
-        position: absolute;
-        top: 250px;
-        left: 70px;
-        transform: rotate(0deg);
+        position: absolute; 
+         top: 150px;
+        left: 260px;
+        width: 170px;
+        height: 80px; 
+    }
+
+    .discount-tag h3 {
+        font-size: 1.2rem;
+    }
+
+    .discount-tag p {
+        font-size: 1rem;
     }
 }
 
