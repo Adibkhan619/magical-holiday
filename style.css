@@ -8,6 +8,7 @@ font-family: 'Mulish', sans-serif; */
     padding: 0;
 }
 
+/* =========== NAV SECTION========= */
 .website-title {
     display: flex;
     gap: 16px;
@@ -42,6 +43,9 @@ font-family: 'Mulish', sans-serif; */
 .orange-text {
     color: #FF5400;
 }
+.orange-text a{
+    color: #FF5400;
+}
 
 /* ========= BANNER SECTION ========== */
 
@@ -53,6 +57,8 @@ font-family: 'Mulish', sans-serif; */
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    margin: 50px auto;
+    width: 90%;  
 }
 
 .banner-heading {
@@ -76,7 +82,6 @@ font-family: 'Mulish', sans-serif; */
 }
 
 .travel-input-field {
-
     display: flex;
     justify-content: space-around;
     gap: 24px;
@@ -85,8 +90,6 @@ font-family: 'Mulish', sans-serif; */
     padding: 16px;
     max-width: 800px;
     margin: 50px auto;
-
-
 }
 
 .input-field {
@@ -124,10 +127,13 @@ font-family: 'Mulish', sans-serif; */
     padding: 50px 0%;
     align-items: center;
     justify-content: center;
+    /* text-align: center; */
 }
 
 .mountain-img {
-    width: 100%;
+    width: 90%;
+    margin: 0;
+    padding: 0;
 }
 
 .section-headings {
@@ -135,7 +141,6 @@ font-family: 'Mulish', sans-serif; */
     font-family: Mulish;
     font-size: 2.5rem;
     font-weight: 800;
-
 }
 
 .section-paragraphs {
@@ -166,7 +171,7 @@ font-family: 'Mulish', sans-serif; */
 }
 
 /* shared style */
-.center-alinged {
+.center-aligned {
     text-align: center;
 }
 
@@ -185,7 +190,7 @@ font-family: 'Mulish', sans-serif; */
     grid-template-rows: repeat(3, 1fr);
 }
 
-.destination-img img {
+.destination-img img{
     width: 100%;
     height: 286px;
 }
@@ -225,12 +230,11 @@ font-family: 'Mulish', sans-serif; */
     grid-row: 3/span 1;
 }
 
+
 /* ========== WHY CHOOSE US SECTION ========= */
 
-
-
 .why-choose-us {
-    margin: 100px 10%;
+    margin: 100px 0%;
 }
 
 .card-container {
@@ -405,7 +409,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:16px ;
+    gap: 16px;
 }
 
 .footer-line {
@@ -421,20 +425,15 @@ footer {
     font-family: Inter;
     font-size: 16px;
     font-weight: 300;
-
 }
-
-
-
-
-
-
 
 
 /* ========= MEDIA QUERY ========= */
 
 @media screen and (max-width: 600px) {
 
+
+     /* NAV AND BANNER SECTION */
     .nav {
         margin: 20px 20px 5px 20px;
     }
@@ -492,25 +491,52 @@ footer {
     }
 
 
-    .destinations {}
-
+    /* POPULAR TOUR SECTION */
     .popular-tour-section {
+        margin: 20px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
     }
 
-    .mountain-img {
-        width: 90%;
-        margin: ;
-        align-items: center;
-        justify-content: center;
+    .mountain-img img {
+        width: 100%;
     }
 
+    .bottom-article {
+        flex-direction: column;
+    }
+
+    /* DESTINATION SECTION */
+    .destination-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video iframe {
+        width: 100%;
+    }
+
+    .newsletter-section {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .newsletter-img img {
+        width: 100%;
+    }
+
+    .discount-tag {
+        position: absolute;
+        top: 250px;
+        left: 70px;
+        transform: rotate(0deg);
+    }
 }
 
-@media screen and (min-width:600px) and (max-width:991px) {
+/* TABLET */
+
+/* @media screen and (min-width:600px) and (max-width:991px) {
 
     .website-title {
         margin-left: 0;
@@ -552,11 +578,11 @@ footer {
         grid-column: 2;
         justify-content: center;
     }
-}
+} */
 
-@media screen and (min-width:992px) {
+/* @media screen and (min-width:992px) {
     .banner-section {
         margin: 50px auto;
         width: 90%;
     }
-}
+} */
